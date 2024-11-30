@@ -90,6 +90,12 @@
     },
     "biography": {
       "type": "text"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course.course",
+      "mappedBy": "users_permissions_users"
     }
   }
 }
