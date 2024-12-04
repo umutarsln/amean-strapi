@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "referances",
+  "info": {
+    "singularName": "referance",
+    "pluralName": "referances",
+    "displayName": "Referance"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
