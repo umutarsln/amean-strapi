@@ -639,6 +639,7 @@ export interface ApiEventEvent extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date: Schema.Attribute.DateTime & Schema.Attribute.Required;
+    deadline: Schema.Attribute.DateTime;
     description: Schema.Attribute.RichText & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images', true>;
     isfeatured: Schema.Attribute.Boolean;
@@ -647,6 +648,8 @@ export interface ApiEventEvent extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     location: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
+    quota: Schema.Attribute.Integer;
+    registered: Schema.Attribute.Integer;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &

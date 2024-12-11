@@ -50,6 +50,15 @@
     },
     "isfeatured": {
       "type": "boolean"
+    },
+    "quota": {
+      "type": "integer"
+    },
+    "registered": {
+      "type": "integer"
+    },
+    "deadline": {
+      "type": "datetime"
     }
   }
 }
